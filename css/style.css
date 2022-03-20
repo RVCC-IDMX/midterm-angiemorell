@@ -140,7 +140,8 @@ a:hover {
     border: 2px solid black;
     margin: 5px
 }
-@media only screen and (max-width: 786px) {
+
+@media only screen and (min-width: 786px) {
     h1 {
         font-size: small;
     }
@@ -155,6 +156,53 @@ a:hover {
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 3;
-      }
+      }     
+}
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: large;
+    }
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+    }
+
+    header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        /* grid-row-end: 4; */
+    }
+    
+    nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        /* grid-row-end: 4; */
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows:max-content;
+    }
+
+    aside h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+    }
       
 }
