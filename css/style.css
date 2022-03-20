@@ -86,6 +86,7 @@ aside {
     border-width: .2rem;
     border-color: #886644;
     box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+    text-align: center;
 }
 
 footer {
@@ -138,4 +139,22 @@ a:hover {
 .submission {
     border: 2px solid black;
     margin: 5px
+}
+@media only screen and (max-width: 786px) {
+    h1 {
+        font-size: small;
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    aside h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      
 }
