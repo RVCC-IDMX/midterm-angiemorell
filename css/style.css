@@ -78,6 +78,17 @@ main p:first-of-type::first-line {
     font-size: larger;
 }
 
+#cryptogram img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+#cryptogram figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
 aside {
     margin: 2rem;
     padding: 1rem;
