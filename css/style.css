@@ -1,5 +1,15 @@
 /*Journey to the Center of The Earth Practicum*/
 /*Angie Ramirez*/
+body {
+    background-image: linear-gradient(#765729,#000000);
+    opacity: 75%;
+}
+
+header, nav, main, aside, footer {
+    background-color: white;
+}
+
+
 header {
     margin: 2rem;
     padding: 1rem;
@@ -7,11 +17,20 @@ header {
     border-style: solid;
     border-width: .2rem;
     border-color: #886644;
-    box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+    box-shadow: inset 20px 40px 25px #000;
     border-radius: 1rem 1rem 0rem 0rem;
     /*inset found 
     https://designshack.net/articles/css/inner-shadows-in-css-images-text-and-beyond/#:~:text=To%20shift%20a%20shadow%20to,done%2C%20it's%20actually%20really%20simple. */
+    background-image: url("../img/cave.jpg");
+    background-size: 650px;
+    text-align: center;
+}
 
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    color: white;
 }
 
 nav {
@@ -22,7 +41,22 @@ nav {
     border-width: .2rem;
     border-color: #886644;
     box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+}
 
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    border-right: double;
+    padding-right: 10px;
+    font-size: small;
+}
+
+nav ul li:last-child {
+    border-right: none;
 }
 
 main {
@@ -33,6 +67,15 @@ main {
     border-width: .2rem;
     border-color: #886644;
     box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+    
+}
+main img {
+    float: left;
+    padding-right: 2rem;
+}
+
+main p:first-of-type::first-line {
+    font-size: larger;
 }
 
 aside {
@@ -54,4 +97,45 @@ footer {
     border-radius: 0rem 0rem 1rem 1rem;
     border-color: #886644;
     box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+
+/*https://www.tutorialspoint.com/css/css_pseudo-class-lang.htm*/
+:lang(fr) {
+    font-style: italic;
+}
+
+:lang(is) {
+    font-style: italic;
+}
+
+:lang(id) {
+    font-style: italic;
+}
+
+:lang(id) {
+    font-style: italic;
+}
+
+.character {
+    font-weight:bolder;
+}
+
+h2 {
+    border-bottom: black;
+    border-bottom-style: dashed;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+a:hover {
+    color:#A52A2A;
+    /* used this for basic concept of the hover: https://css-tricks.com/css-link-hover-effects/ */
+}
+
+.submission {
+    border: 2px solid black;
+    margin: 5px
 }
