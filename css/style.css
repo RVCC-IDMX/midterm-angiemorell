@@ -1,2 +1,57 @@
 /*Journey to the Center of The Earth Practicum*/
 /*Angie Ramirez*/
+header {
+    margin: 2rem;
+    padding: 1rem;
+    border: 5em;
+    border-style: solid;
+    border-width: .2rem;
+    border-color: #886644;
+    box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+    border-radius: 1rem 1rem 0rem 0rem;
+    /*inset found 
+    https://designshack.net/articles/css/inner-shadows-in-css-images-text-and-beyond/#:~:text=To%20shift%20a%20shadow%20to,done%2C%20it's%20actually%20really%20simple. */
+
+}
+
+nav {
+    margin: 2rem;
+    padding: 1rem;
+    border: 5em;
+    border-style: solid;
+    border-width: .2rem;
+    border-color: #886644;
+    box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+
+}
+
+main {
+    margin: 2rem;
+    padding: 1rem;
+    border: 5em;
+    border-style: solid;
+    border-width: .2rem;
+    border-color: #886644;
+    box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+}
+
+aside {
+    margin: 2rem;
+    padding: 1rem;
+    border: 5em;
+    border-style: solid;
+    border-width: .2rem;
+    border-color: #886644;
+    box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+}
+
+footer {
+    margin: 2rem;
+    padding: 1rem;
+    border: 5em;
+    border-style: solid;
+    border-width: .2rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    border-color: #886644;
+    box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
+}
