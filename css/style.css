@@ -1,6 +1,7 @@
 /*Journey to the Center of The Earth Practicum*/
 /*Angie Ramirez*/
 body {
+    width: 100%;
     background-image: linear-gradient(#765729,#000000);
     opacity: 75%;
 }
@@ -11,7 +12,6 @@ header, nav, main, aside, footer {
 
 
 header {
-    margin: 2rem;
     padding: 1rem;
     border: 5em;
     border-style: solid;
@@ -34,7 +34,8 @@ header h1 {
 }
 
 nav {
-    margin: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 1rem;
     border: 5em;
     border-style: solid;
@@ -60,16 +61,18 @@ nav ul li:last-child {
 }
 
 main {
-    margin: 2rem;
+    margin-right: .5rem;
     padding: 1rem;
     border: 5em;
     border-style: solid;
     border-width: .2rem;
     border-color: #886644;
     box-shadow: inset 3px 4px 5px rgba(0,0,0,0.6);
-    
+    overflow:auto;
 }
+
 main img {
+    width: 40%;
     float: left;
     padding-right: 2rem;
 }
@@ -90,7 +93,8 @@ main p:first-of-type::first-line {
 }
 
 aside {
-    margin: 2rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
     padding: 1rem;
     border: 5em;
     border-style: solid;
@@ -101,7 +105,7 @@ aside {
 }
 
 footer {
-    margin: 2rem;
+    margin-top: 1rem;
     padding: 1rem;
     border: 5em;
     border-style: solid;
@@ -196,6 +200,7 @@ a:hover {
     }
 
     aside {
+        margin-top: 0rem;
         display: grid;
         grid-template-columns: auto;
         grid-auto-rows:max-content;
